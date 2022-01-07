@@ -1,4 +1,35 @@
+label{
+    font-size:5vw;
+}
+
+input{
+    font-size:5vw;
+}
+
+p{
+    font-size:5vw;
+}
+
 ul {
-  display: table;
-  margin: 0 auto;
+    font-size:5vw;
+    display: table;
+    margin: 0 auto;
+}
+
+li{
+    font-size:5vw;
+}
+
+li:hover {
+    animation-duration: 2s;
+    animation-name: shake;
+}
+
+@keyframes shake{
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }
 }
