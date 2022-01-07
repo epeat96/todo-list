@@ -1,12 +1,21 @@
+body {
+    background-color: #F2EBC7;
+}
+
 label{
+    color: #343642;
     font-size:5vw;
 }
 
 input{
-    font-size:5vw;
+    color: #343642;
+    background-color: #F6F1D6;
+    font-size: 5vw;
+    border-radius: 5px;
 }
 
 p{
+    color: #343642;
     font-size:5vw;
 }
 
@@ -17,19 +26,21 @@ ul {
 }
 
 li{
+    color: #348899;
     font-size:5vw;
 }
 
 li:hover {
+    color: #994534;
     animation-duration: 2s;
     animation-name: shake;
 }
 
 @keyframes shake{
-    0% { transform: skewX(-15deg); }
-    5% { transform: skewX(15deg); }
-    10% { transform: skewX(-15deg); }
-    15% { transform: skewX(15deg); }
-    20% { transform: skewX(0deg); }
+    0% { transform: skewX(-15deg); color: #8B477E; }
+    5% { transform: skewX(15deg); color: #923E70;}
+    10% { transform: skewX(-15deg); color: #963760;}
+    15% { transform: skewX(15deg); color: #97314F; }
+    20% { transform: skewX(0deg);  }
     100% { transform: skewX(0deg); }
 }
