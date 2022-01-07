@@ -15,8 +15,22 @@ newTask.addEventListener('keyup',function (e){
         var text = document.createTextNode(newTask.value)
         var preview = document.getElementById('preview');
         element.appendChild(text)
-        todoList.appendChild(element)
+        todoList.prepend(element)
         preview.innerHTML=''
         newTask.value=''
     }
+});
+
+todoList.addEventListener('click',function(e){
+    var element = e.target
+    console.log(element.nodeName)
+    if(element.nodeName == "UL"){
+        return;
+    }
+    if (element.style.textDecoration == "line-through"){
+        todoList.removeChild(element)
+        return
+    }
+    element.parentElement.appendChild(element);
+    element.style = "text-decoration: line-through";
 });
